@@ -99,13 +99,14 @@
 //3
 // var numList = [1, 2, 5];
 // var sum = 0;
-// var prozvod = 1;
+// var product = 1;
 
 // for (num in numList){
 //     sum += numList[num];
-//     proizvod *= numList[num];
+//     product *= numList[num];
 // }
-// console.log(sum);
+// console.log('Sum of elements is ', sum);
+// console.log('Product of elements is ', product);
 
 //4
 // var x = ['1', 'A', 'B', 'c', 'r', true, NaN, undefined];
