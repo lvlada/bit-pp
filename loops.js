@@ -303,10 +303,10 @@
 //10
 
 // var a = [2, -2, 33, 12, 5, 8]
-// var newE = 78;
-// var pos = 3;
+// var e = 78;
+// var p = 3;
 
-// a.splice(3, 0, newE)
+// a.splice(p, 0, e)
 // console.log(a);
 
 
