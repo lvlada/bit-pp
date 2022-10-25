@@ -99,9 +99,11 @@
 //3
 // var numList = [1, 2, 5];
 // var sum = 0;
+// var prozvod = 1;
 
 // for (num in numList){
 //     sum += numList[num];
+//     proizvod *= numList[num];
 // }
 // console.log(sum);
 
