@@ -498,10 +498,9 @@
 
 // function hiddeEmail(email){
 //     var fist_part = email.substr(0, 3);
-//     var last_part = '';
 //     var middle_part = '...';
 //     var index = email.indexOf('@');
-//     last_part = email.substr(index, email.lenght)
+//     var last_part = email.substr(index, email.lenght);
 //     return fist_part + middle_part + last_part;
 // }
 
