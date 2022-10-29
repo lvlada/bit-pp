@@ -358,10 +358,176 @@
 
 
 //Exercise_Functions 3
+//1
+// function concetString(a, b, c){
+//     var first_part = '';
+//     var second_part = '';
+//     if(c){
+//         var first_part = a.substr(0, c)
+//         var second_part = a.substr(c);
+//         return first_part + ' ' + b + ' ' + second_part;
+//     } else{
+//         return b + ' ' + a;
+//     }
+// }
+// var newString = concetString('My random string', 'JS', 10);
+// console.log(newString);
 
-function concetString(a, b, c){
+
+//2
+// function convertStr(){
+//     newString = '';
+//     newNumber = 0;
+//     for(var i = 0; i < arguments.length; i++ ){
+//         newNumber = Number(arguments[i]);
+//         if(!isNaN(newNumber) && newNumber != "Infinity" && newNumber != false){
+//             newString += newNumber;
+//         }
+//     }
+//     return newString;
+
+// }
+
+// var newString = convertStr(NaN, 0, 15, false, -22, '', undefined, 47, null);
+// console.log(newString);
 
 
-}
+//3
+// function convertStrToNumber(){
+//     newArray = [];
+//     newNumber = 0;
+//     for(var i = 0; i < arguments.length; i++ ){
+//         newNumber = Number(arguments[i]);
+//         if(!isNaN(newNumber) && newNumber != "Infinity" && newNumber != false){
+//             newArray.push(newNumber);
+//         }
+//     }
+//     return newArray;
 
-var newString = concetString('My random string', 'JS', 10);
+// }
+
+// var newArray = convertStrToNumber(NaN, 0, 15, false, -22, '', undefined, 47, null);
+// console.log(newArray);
+
+
+//4
+// function revers(a){
+//     var newString = String(a);
+//     var reversString = '';
+//     var newNumber = 0;
+//     for(var i = newString.length -1; i > 0; i--){
+//         reversString += newString[i];
+//     }
+//     newNumber = Number(reversString);
+//     return newNumber;
+
+// }
+
+// var newNumber = revers(12345);
+// console.log(newNumber);
+
+//5
+
+// function lastElement(){
+//     var newElement = Math.abs(arguments[arguments.length-1]);
+//     var newArray = [];
+//     for(var i = arguments.length-1; i > arguments.length -1 -newElement; i--){
+//         newArray.push(arguments[i]);
+//     }
+//     return newArray.reverse();
+// }
+
+// var newArray = lastElement(7, 9, 0, -2);
+// console.log(newArray);
+
+//6
+
+// function createElements(a, b){
+//     newArray = [];
+//         for(var i = 0; i < a; i++){
+//             if(b){
+//             newArray.push(b);
+//             } else{
+//                 newArray.push(null);
+//             }
+//         }
+
+//     return newArray;
+// }
+
+
+// var newArray = createElements(6, 'test');
+// console.log(newArray);
+
+
+//7
+// function isPerfect(number) {
+//     var temp = 0;
+//     for (var i = 1; i <= number / 2; i++) {
+//         if (number % i === 0) {
+//             temp += i;
+//         }
+//     }
+//     if (temp === number && temp !== 0) {
+//         return number + ' is a perfect number.';
+//     } else {
+//         return number + ' is not a perfect number.';
+//     }
+//  }
+//  var rez = isPerfect(8128);
+//  console.log(rez);
+
+//8
+
+// function countString(a, b){
+//     var newArray = a.split(' ');
+//     var counter = 0;
+//     for(word in newArray){
+//         if(newArray[word] == b){
+//             counter ++;
+//         }
+//     }
+//     return b +  ' was found ' + counter + ' times';
+// }
+
+// var rez = countString('The quick brown fox fox', 'fox');
+// console.log(rez);
+
+
+//9
+
+// function hiddeEmail(email){
+//     var fist_part = email.substr(0, 3);
+//     var last_part = '';
+//     var middle_part = '...';
+//     var index = email.indexOf('@');
+//     last_part = email.substr(index, email.lenght)
+//     return fist_part + middle_part + last_part;
+// }
+
+// var rez = hiddeEmail('vladimirlukic@gmail.com');
+// console.log(rez);
+
+
+//10
+
+// function mostfreq(){
+//     var mostfreq = 1; 
+//     var counter = 0;  
+//     var item; 
+//     for (var i = 0; i < arguments.length; i++) { 
+//             for (var j=i; j<arguments.length; j++){   
+//                     if (arguments[i] == arguments[j])   
+//                         counter++; 
+//                     if (mostfreq < counter) {
+//                         mostfreq = counter;      
+//                         item = arguments[i]; 
+//                     }
+//             }
+//             counter = 0;
+//     }
+//     return 'The most frequent item is : ' + item + ' times!';
+// }
+
+// var rez = mostfreq(3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3);
+// console.log(rez);
