@@ -377,7 +377,14 @@
 
 //9 combinations of two numbers between 1 and 7 (E.g. (1.2),(2,1) is allowed, but not (1,1), (2,2)...).
 
+// function combNumbers(num1, num2){
 
+// }
+
+// var num1 = 2;
+// var num2 = 4;
+// var rez = combNumbers(num1, num2);
+// console.log(rez);
 
 
 //10
@@ -402,6 +409,49 @@
 
 //11 palindrome
 
+// function palidrome(string){
+//     var Odlstring = string.replaceAll(/\s/g, '');
+//     var newString = '';
+//     for(var i = Odlstring.length-1; i >= 0; i--){
+//         newString += Odlstring[i];
+//     }
+//     if(newString == Odlstring){
+//         console.log('NEW String: ' + newString);
+//         return true;
+//     }else {
+//         console.log('NEW String: ' + newString);
+//         console.log('OLD String: ' + Odlstring);
+//         return false;
+//     }
+// }
+
+// var giveString = 'a nut for a jar of tuna';
+// var rez = palidrome(giveString);
+// console.log(rez);
 
 
 //12 greatest common divisor of two integers
+
+// function greatDiv(num1, num2){
+//     minNumber = 0;
+//     commonDiv = 0;
+//     if(num1 < num2){
+//         minNumber = num1;
+//     } else {
+//         minNumber = num2;
+//     }
+
+//     for(var i = 0; i <= minNumber; i ++){
+//         if(num1 % i == 0 && num2 % i == 0 ){
+//             commonDiv = i;
+//         }
+//     }
+
+//     return commonDiv;
+// }
+
+// var num1 = 9;
+// var num2 = 81;
+
+// var rez = greatDiv(num1, num2);
+// console.log(rez);
