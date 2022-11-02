@@ -375,7 +375,7 @@
 // var rez = revString(a);
 // console.log(rez);
 
-//9
+//9 combinations of two numbers between 1 and 7 (E.g. (1.2),(2,1) is allowed, but not (1,1), (2,2)...).
 
 
 
@@ -400,8 +400,8 @@
 // console.log(rez);
 
 
-//11
+//11 palindrome
 
 
 
-//12
+//12 greatest common divisor of two integers
