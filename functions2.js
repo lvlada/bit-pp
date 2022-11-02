@@ -272,3 +272,136 @@
 // var points = [50, 39, 63, 72, 99, 51, 83, 59];
 
 // nameGrades(names, points);
+
+//4
+//  function sortArray(array){
+//     var newArray = [];
+//     var elem = null;
+//     for(var i = 1; i < array.length; i++){
+//         for(var j = 0; j < i; j++){
+//             if(array[i] < array[j]){
+//                 elem = array[i];
+//                 array[i] = array[j];
+//                 array[j] = elem;
+//             } 
+//         }
+//     }
+//     for(elem in array){
+//         newArray.push(array[elem]*2);
+//     }
+//     return newArray;
+//  }
+//  var array = [ 13, 11, 15, 5, 6, 1, 8, 12 ];
+
+//  var rez = sortArray(array);
+//  console.log(rez);
+
+
+ //5
+//  function sortArray(array){
+//     var elem = null;
+//     for(var i = 1; i < array.length; i++){
+//         for(var j = 0; j < i; j++){
+//             if(array[i] > array[j]){
+//                 elem = array[i];
+//                 array[i] = array[j];
+//                 array[j] = elem;
+//             } 
+//         }
+//     }
+//     return array;
+//  }
+//  var array = [ 13, 11, 15, 5, 6, 1, 8, 12 ];
+
+//  var rez = sortArray(array);
+//  console.log(rez);
+
+ //6
+
+//  function evenOdd(even, odd){
+//     var evenSum = 0;
+//     var oddSum = 0;
+//     var sum = 0;
+//     for(var i = 1; i <= 1000; i++){
+//         if(i % 2 == 0){
+//             evenSum += i;
+//         }
+//     }
+//     for(var i = 1; i <= 500; i++){
+//         if(i % 2 != 0){
+//             oddSum += i;
+//         }
+//     }
+//     sum = (evenSum - oddSum) * 12.5;
+
+//     return sum;
+//  }
+
+// var even = 1000;
+// var odd = 500;
+// console.log(evenOdd(even, odd));
+
+//7
+
+// function letterApp(a){
+//     var newString = '';
+//     for(var i = 0; i < a.length; i++){
+//         if(a[i].length > 1 ){
+//             newString += a[i][0] + a[i][1];
+//         }
+//     }
+
+//     return newString;
+// }
+
+// var array = [ "M", "Anne", 12, "Steve", "Joe", "John", "David", "Mark", true, "A" ];
+
+// var rez = letterApp(array);
+// console.log(rez);
+
+
+//8
+
+// function revString(string){
+//     var newString = '';
+//     for(var i = string.length-1; i >= 0; i--){
+//         newString += string[i];
+//     }
+
+//     return newString;
+// }
+
+// var a = 'Belgrade Institute of Technology';
+// var rez = revString(a);
+// console.log(rez);
+
+//9
+
+
+
+
+//10
+
+// function checkPrime(number){
+//     if(number == 2 || number == 3 || number == 5){
+//         return true;
+//     }
+//     if(number > 1 && number % 2 != 0 && number % 3 != 0 && number % 5 != 0){
+//         return true;
+    
+//     } else{
+    
+//         return false;
+//     }
+// }
+
+// var number = 89;
+// var rez = checkPrime(number);
+// console.log(rez);
+
+
+//11
+
+
+
+//12
