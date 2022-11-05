@@ -312,21 +312,21 @@
 
 //11
 
-// function convertStrToNumber(){
-//     newArray = [];
-//     newNumber = 0;
-//     for(var i = 0; i < arguments.length; i++ ){
-//         newNumber = Number(arguments[i]);
-//         if(!isNaN(newNumber) && newNumber != "Infinity"){
-//             newArray.push(newNumber);
-//         }
-//     }
-//     return newArray;
+function convertStrToNumber(){
+    newArray = [];
+    newNumber = 0;
+    for(var i = 0; i < arguments.length; i++ ){
+        newNumber = Number(arguments[i]);
+        if(!isNaN(newNumber) && newNumber != "Infinity"){
+            newArray.push(newNumber);
+        }
+    }
+    return newArray;
 
-// }
+}
 
-// var newArray = convertStrToNumber('20', '1', '21', undefined, '42', '1e+3', Infinity);
-// console.log(newArray);
+var newArray = convertStrToNumber('20', '1', '21', undefined, '42', '1e+3', Infinity);
+console.log(newArray);
 
 
 //12
