@@ -79,32 +79,40 @@
 
 //6
 
-function stringInfo(string){
-    var newArray = [];
-    var length = string.length;
-    var firstChar = string[0];
-    var lastChar = string[string.length-1];
-    var repitetChar = '';
-    var middleChar = '';
-    var middleCharDuble = '';
-    if(length % 2 != 0){
-        var num = parseInt(string.length/2)
-        middleChar = string[num+1];
-    } else{
-        //middleChar = string[string.length/2];
-       // middleCharDuble = string[string.length/2 +1];
+// function stringInfo(string){
+//     var newArray = [];
+//     var length = string.length;
+//     var firstChar = string[0];
+//     var lastChar = string[string.length-1];
+//     var repitetChar ;
+//     var middleChar ;
+//     var indexRep;
+//     var secChar = string[1];
+//     var num = parseInt(string.length/2)
+//     if(length % 2 != 0){
+//         middleChar = string[num];
+//     } else{
+//         middleChar = string[num-1] + string[num];
+//     }
 
-      
-    }
-    newArray.push(length, firstChar, lastChar)
+//     for(item in string){
+//         if(string[item] == secChar){
+//             indexRep = item;
+//         } else{
+//             indexRep = 'not found';
+//         }
+//     }
+//     newArray.push(length, firstChar, lastChar, middleChar, indexRep);
 
-    return newArray;
+//     return newArray;
 
-}
+// }
 
-var string = 'Computer';
-var rez = stringInfo(string);
-console.log(rez);
+// //var string = 'Computer';
+// var string = 'Science';
+// var rez = stringInfo(string);
+// console.log(rez);
+
 
 
 //7
