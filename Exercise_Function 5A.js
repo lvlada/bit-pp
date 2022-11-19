@@ -155,5 +155,5 @@
 // }
 
 // var array = [2, 3, 4, 5, 6, 7];
-// var rez = arrayDevider(array, 4);
+// var rez = arrayDevider(array, 3);
 // console.log(rez);

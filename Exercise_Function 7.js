@@ -93,23 +93,19 @@ console.log(rez);
 
 // function checkPrime(number){
 //     var newArray = [];
-//     for(var i = 0; i < number; i ++){
+//     for(var i = 2; i <= number; i ++){
 //         if(i == 2 || i == 3){
 //             newArray.push(i);
-           
 //         } else if(i % 2 != 0 && i % 3 != 0){
-//             if(i != 1){
 //                 newArray.push(i);
-//             }
 //         } 
 //     }
-
 //     return newArray;
-
 // }
 
-// var rez = checkPrime(20);
+// var rez = checkPrime(19);
 // console.log(rez);
+
 
 //7
 // Create a function that returns an array that expands by 1 from 1 to the value of the input, and then
