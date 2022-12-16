@@ -18,3 +18,6 @@ console.log(e[2], e[2][1]);
 var testName = "vladimir";
 var niz = [1, testName, 2];
 console.log(niz[1]);
+
+
+// Ovo je test
