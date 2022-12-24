@@ -275,3 +275,27 @@ function checkIfDigits(input) {
 
 console.log(checkIfDigits('JavaScript'));
 console.log(checkIfDigits('java3'));
+
+
+//8
+//Write a function that calculates a number of days to your birthday.
+
+function calBirth(date){
+
+}
+
+var birthday = '2023-08-28';
+
+// function daysToBirthday(input = "2023-09-30") {
+//     var birthday = new Date(input);
+//     var todayDate = new Date()
+//     var days = (birthday - todayDate) / 86400000;  // Razlika je u milisekundama
+//     return ~~days;  // Vraca integer, brise decimale
+// }
+// console.log(daysToBirthday());
+
+//9
+
+//10 NO
+
+//11
