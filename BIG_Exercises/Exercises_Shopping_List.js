@@ -12,11 +12,6 @@
         this.price = price.toFixed(2);
         this.expiration = new Date(expiration).toLocaleDateString('en-US');
         this.getInfo = function() {
-            // String
-            // var productCode = `${this.name[0].toUpperCase()}${this.name[this.name.length-1].toUpperCase()}${this.productID}, ${this.name}, ${this.price}`;
-            // return productCode;
-
-            // Array
             var productInfo = [this.name, this.price, this.expiration];
             this.productCode = `${this.name[0].toUpperCase()}${this.name[this.name.length-1].toUpperCase()}${this.productID}`;
             productInfo.unshift(this.productCode);
