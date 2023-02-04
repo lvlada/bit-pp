@@ -1,0 +1,63 @@
+
+h1{
+    padding-top:100px;
+    padding-bottom: 10px;
+    color:brown;
+}
+.main{
+    padding:50px;
+    background-image: url('../IMG/bg.jpg');
+    background-size: cover;
+}
+.main h3{
+    color: white;
+}
+.main p {
+    color: white;
+}
+
+.main table td{
+    margin-bottom:100px;
+    text-align: center;
+
+}
+.failed td:first-child{
+    width: 70%;
+}
+.pass td:first-child{
+    width: 70%;
+}
+
+.pass{
+    background-color:#32b8b4;
+}
+.failed{
+    background-color: #fc524f;
+}
+
+.input-form{
+    background-color:beige;
+    padding:20px;
+}
+#input-table1 thead{
+    color:green;
+}
+#input-table1 td:last-child{
+    color:green;
+    width: 10%;
+}
+#input-table2 thead{
+    color:red!important;
+}
+#input-table2 td:last-child{
+    color:red!important;
+    width: 10%;
+}
+#input-table1 td:last-child{
+    width: 10%;
+}
+
+#totalS{
+    font-size:24px;
+    font-weight: 700;
+}
