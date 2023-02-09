@@ -29,18 +29,13 @@ function createMovie(){
     var newMovie = (`<li>${movie.getData()}</li>`);
     $('.movie-list ul').append(newMovie);
 
-    var movie = $(`<option>${movie.title}</option>`)
+    var movie = $(`<option value="${movie.length}">${movie.title}</option>`)
     $('#selectMovie').append(movie);
 
     // cleare form
     $('#titleMovie').val('');
     $('#lengthMovie').val('');
     $('#genreMovie').val('');
-
-
-
-    console.log(movie.getData());
-    console.log(allMovies);
 
 }
 
@@ -50,19 +45,11 @@ function createMovie(){
 
 var allPrograms = [];
 
-//console.log(`Ovo je iz drugog fajla ${allMovies.movie}`);
-
-// allMovies.forEach(function(item){
-//     var movie = $(`<option>${allMovies.Movie[item].getData()}</option>`)
-//     $('#selectMovie').append(movie);
-// })
-
-
 class Program{
-    constructor(date, movieNumber = 0, duration = 0){
+    constructor(date, duration = addProgram()){
         this.date = date;
-        this.movieNumber = movieNumber;
-        this.duration = duration; //this need to changed
+        this.movieNumber = allMovies.length;
+        this.duration = duration;
     }
 
     getInfo(){
@@ -74,6 +61,9 @@ class Program{
        
     }
 }
+
+
+//onclick button Create program
 
 function createProgram(){
     var date = $('#inputDate').val();
@@ -90,12 +80,13 @@ function createProgram(){
     allPrograms.push(newProgram);
 
     $('#inputDate').val('');
+    console.log(allPrograms);
 
 }
 
-
-
-
+//onclick button Add Program
 function addProgram(){
-
+    var selMovie = $('#selectMovie').val();
+    console.log(selMovie);
+    return selMovie;
 }
