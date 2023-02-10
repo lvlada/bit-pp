@@ -19,7 +19,7 @@ class Movie{
 function createMovie(){
 
     var name = $('#titleMovie').val();
-    var length = $('#lengthMovie').val();
+    var length = Number($('#lengthMovie').val());
     var genre = $('#genreMovie').val()
 
     var movie = new Movie(name, length, genre);
@@ -46,19 +46,27 @@ function createMovie(){
 var allPrograms = [];
 
 class Program{
-    constructor(date, duration = addProgram()){
+    constructor(date){
         this.date = date;
         this.movieNumber = allMovies.length;
-        this.duration = duration;
+        this.movies = [];
+        this.duration = 0;
     }
 
     getInfo(){
-        if(allPrograms.length == 0){
+        if(this.movies.length == 0){
             return `${this.date}, program, duration: TBA` ; 
         } else{
-            return `${this.date}, ${this.movieNumber}, duration: ${this.duration}` ;
+            var movieDuration = 0;
+            this.movies.forEach(item=> { movieDuration += item.length })
+            var description = this.movies.length == 1? 'movie': 'movies';
+            return `${this.date}, ${this.movies.length} ${description}, duration: ${movieDuration}` ;
         }
        
+    }
+
+    addMovie(movie) {
+        this.movies.push(movie);
     }
 }
 
@@ -86,7 +94,40 @@ function createProgram(){
 
 //onclick button Add Program
 function addProgram(){
-    var selMovie = $('#selectMovie').val();
+    var selMovie = $('#selectMovie option:selected').text();
     console.log(selMovie);
+    var programOption = $('#selectProgram option:selected');
+    var programSelected = programOption.text();
+    var program;
+    allPrograms.forEach(item=> {
+        var info = item.getInfo();
+        if(info == programSelected) {
+            program = item;
+        }
+    });
+
+    var movie;
+    allMovies.forEach(item=> {
+        if(item.title == selMovie) {
+            movie = item;
+        }
+    })
+
+    if(program) {
+        program.addMovie(movie);
+        var list =  $('.program-list ul li');
+        for(let i = 0; i< list.length;i++) {
+            if($(list[i]).text() == programSelected) {
+                var info = program.getInfo();
+                $(list[i]).text(info);
+                programOption.text(info);
+            }
+        }
+
+       $('#selectMovie').val(0);
+       $('#selectProgram').val(0);
+    }
+
+
     return selMovie;
 }
